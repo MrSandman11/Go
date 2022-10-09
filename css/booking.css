@@ -1,0 +1,17 @@
+.booking {
+  padding-bottom: 100px;
+}
+
+.booking__container {
+  height: 455px;
+  font-size: 16px;
+}
+
+.booking__title {
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+}

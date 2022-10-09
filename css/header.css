@@ -1,0 +1,33 @@
+.header {
+  padding: 146px 0 100px;
+}
+
+.header__container {
+  height: 823px;
+  position: relative;
+}
+
+.header__container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 130px;
+  height: 762px;
+  width: 675px;
+  background-image: url("../img/header_bg.png");
+  z-index: 1;
+}
+
+.header__title {
+  font-weight: 900;
+  font-size: 150px;
+  letter-spacing: -0.1em;
+  line-height: 100%;
+  z-index: -1;
+}
+
+.header__subtitle {
+  padding-left: 100px;
+  font-size: 28px;
+  line-height: 50px;
+}
