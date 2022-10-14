@@ -1,0 +1,61 @@
+.we-have {
+  padding: 50px 0 50px;
+}
+
+.we-have__container {
+  height: 639px;
+}
+
+.we-have__title {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.we-have__card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.we-have__card-item {
+  flex-basis: 380px;
+  height: 228px;
+  padding: 166px 0 0 40px;
+}
+
+.we-have__card-title {
+  width: 300px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.we-have__card-item_vr {
+  background-image: url("../img/vr.png");
+}
+
+.we-have__card-item_audio {
+  background-image: url("../img/audio_system.png");
+}
+
+.we-have__card-item_karaoke {
+  background-image: url("../img/karaoke.png");
+}
+
+.we-have__card-item_boardgames {
+  background-image: url("../img/boardgames.png");
+}
+
+.we-have__card-item_video {
+  background-image: url("../img/movie_services.png");
+}
+
+.we-have__card-item_ps {
+  background-image: url("../img/playstation.png");
+}
