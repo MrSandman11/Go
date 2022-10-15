@@ -61,6 +61,20 @@
   width: 50px;
 }
 
+.contacts__social-link:hover {
+  color: #EADEED;
+}
+
+.contacts__social-link:focus {
+  color: #EADEED;
+  border: 1px solid #CD06FF;
+}
+
+.contacts__social-link:active {
+  color: #CD06FF;
+  border: none;
+}
+
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;

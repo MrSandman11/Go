@@ -40,6 +40,15 @@
   height: 46px;
   background-image: url("/img/open.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.faq__list-item:nth-child(even):hover::after {
+  background-image: url("/img/open_hover.svg");
+}
+
+.faq__list-item:nth-child(even):active::after {
+  background-image: url("/img/open_active.svg");
 }
 
 .faq__list-item:nth-child(odd)::after {
@@ -48,6 +57,15 @@
   height: 46px;
   background-image: url("/img/open-purple.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.faq__list-item:nth-child(odd):hover::after{
+  background-image: url("/img/open-purple_hover.svg");
+}
+
+.faq__list-item:nth-child(odd):active::after{
+  background-image: url("/img/open-purple_active.svg");
 }
 
 .faq__list-item:last-child {

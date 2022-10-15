@@ -44,10 +44,6 @@
   gap: 60px;
 }
 
-.booking__radio-btn {
-
-}
-
 .booking__radio-label {
   display: block;
   padding: 7px 15px 8px 15px;
@@ -55,6 +51,7 @@
   height: 55px;
   background-color: #FFFFFF;
   border-radius: 8px;
+  border: 3px solid #FFFFFF;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -68,8 +65,21 @@
   display: none;
 }
 
+.booking__radio-label:hover {
+  background: #EADEED;
+  border: 3px solid #640AA3;
+}
+
 .booking__radio-input:checked + .booking__radio-label {
-  background-color: #ffe0a6;
+  background-color: #FFFFFF;
+  border: 3px solid #640AA3;
+  color: #000000;
+}
+
+.booking__radio-label:active {
+  background-color: #6C0287;
+  border: 3px solid #FFFFFF;
+  color: #FFFFFF;
 }
 
 .booking__fieldset-wrapper {
@@ -115,7 +125,7 @@
   appearance: none;
 }
 
-.booking__enterprize-checkbox:before {
+.booking__enterprize-checkbox::before {
   content: '';
   position: absolute;
   top: 0;
@@ -126,7 +136,12 @@
   background-color:#FFFFFF;
 }
 
-.booking__enterprize-checkbox:after {
+.booking__enterprize-checkbox:focus::before{
+  outline: 1px solid #CD06FF;
+  outline-offset: 5px;
+}
+
+.booking__enterprize-checkbox::after {
   content: '';
   position: absolute;
   top: 5px;
@@ -140,7 +155,7 @@
   transform: rotate(-45deg);
 }
 
-.booking__enterprize-checkbox:checked:after {
+.booking__enterprize-checkbox:checked::after {
   opacity: 1
 }
 
@@ -159,8 +174,14 @@
   display: block;
   width: 27px;
   height: 27px;
-  border-radius: 27px;
-  background-color:#FFFFFF;
+  border-radius: 0px;
+  background-image: url("../img/radio.svg");
+  background-color:transparent;
+}
+
+.booking__enterprize-radio:focus::before{
+  outline: 1px solid #CD06FF;
+  outline-offset: 2px;
 }
 
 .booking__enterprize-radio:after {
@@ -207,6 +228,11 @@
   line-height: 28px;
 }
 
+.booking__input:focus {
+  border: 2px solid #CD06FF;
+  outline: none;
+}
+
 .booking__date-item {
   display: flex;
   gap: 32px;
@@ -244,3 +270,21 @@
   color: #6C0287;
   border-radius: 10px;
 }
+
+.booking__btn:hover {
+  background: #EADEED;
+  border: 3px solid #6C0287;
+}
+
+.booking__btn:focus {
+  background: #FFFFFF;
+  border: 3px solid #6C0287;
+}
+
+.booking__btn:active {
+  background: #EADEED;
+  border: 3px solid #EADEED;
+}
+
+
+

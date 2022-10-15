@@ -106,3 +106,31 @@
   left: 669px;
   z-index: 2;
 }
+
+.banner__button-down:hover {
+  background-image: url("../img/down_hover.svg");
+}
+
+.banner__button-down:focus {
+  background-image: url("../img/down_focus.svg");
+  width: 99px;
+  height: 99px;
+  left: 668.5px;
+  bottom: 88.5px;
+}
+
+.banner__button-down:active {
+  background-image: url("../img/down_active.svg");
+  width: 97px;
+  height: 97px;
+  bottom: 90px;
+  left: 669px;
+}
+
+.banner__button:hover, .banner__button:focus {
+  background-color: #840AA3;
+}
+
+.banner__button:active {
+  background-color: #640AA3;
+}
