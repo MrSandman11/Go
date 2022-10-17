@@ -41,6 +41,7 @@
   background-image: url("/img/open.svg");
   background-repeat: no-repeat;
   cursor: pointer;
+  transition: background-image 0.4s;
 }
 
 .faq__list-item:nth-child(even):hover::after {
@@ -58,6 +59,7 @@
   background-image: url("/img/open-purple.svg");
   background-repeat: no-repeat;
   cursor: pointer;
+  transition: background-image 0.4s;
 }
 
 .faq__list-item:nth-child(odd):hover::after{

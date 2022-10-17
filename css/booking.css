@@ -59,6 +59,7 @@
   font-size: 30px;
   line-height: 40px;
   cursor: pointer;
+  transition: background-color 0.4s, border 0.4s, color 0.4s;
 }
 
 .booking__radio-input {
@@ -66,7 +67,7 @@
 }
 
 .booking__radio-label:hover {
-  background: #EADEED;
+  background-color: #EADEED;
   border: 3px solid #640AA3;
 }
 
@@ -134,6 +135,7 @@
   width: 25px;
   height: 25px;
   background-color:#FFFFFF;
+  transition: outline 0.4s;
 }
 
 .booking__enterprize-checkbox:focus::before{
@@ -177,6 +179,7 @@
   border-radius: 0px;
   background-image: url("../img/radio.svg");
   background-color:transparent;
+  transition: outline 0.4s;
 }
 
 .booking__enterprize-radio:focus::before{
@@ -214,6 +217,7 @@
   height: 52px;
   width: 100%;
   padding-left: 20px;
+  transition: border 0.4s;
 }
 
 .booking__input::-moz-placeholder {
@@ -269,20 +273,21 @@
   text-transform: uppercase;
   color: #6C0287;
   border-radius: 10px;
+  transition: background-color 0.4s, border 0.4s;
 }
 
 .booking__btn:hover {
-  background: #EADEED;
+  background-color: #EADEED;
   border: 3px solid #6C0287;
 }
 
 .booking__btn:focus {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: 3px solid #6C0287;
 }
 
 .booking__btn:active {
-  background: #EADEED;
+  background-color: #EADEED;
   border: 3px solid #EADEED;
 }
 

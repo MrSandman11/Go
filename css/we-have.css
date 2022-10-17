@@ -27,6 +27,11 @@
   flex-basis: 380px;
   height: 228px;
   padding: 166px 0 0 40px;
+  transition: transform 0.4s;
+}
+
+.we-have__card-item:hover {
+  transform: scale(1.1);
 }
 
 .we-have__card-title {

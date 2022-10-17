@@ -59,6 +59,7 @@
   display: block;
   height: 50px;
   width: 50px;
+  transition: color 0.4s, border 0.4s;
 }
 
 .contacts__social-link:hover {

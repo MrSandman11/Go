@@ -79,6 +79,7 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #FFFFFF;
+  transition: background-color 0.4s;
 }
 
 .banner__button::before {
@@ -95,6 +96,14 @@
   filter: blur(10px);
 }
 
+.banner__button:hover, .banner__button:focus {
+  background-color: #840AA3;
+}
+
+.banner__button:active {
+  background-color: #640AA3;
+}
+
 .banner__button-down {
   background-image: url("../img/down.svg");
   width: 97px;
@@ -105,6 +114,7 @@
   bottom: 90px;
   left: 669px;
   z-index: 2;
+  transition: background-image 0.4s;
 }
 
 .banner__button-down:hover {
@@ -127,10 +137,3 @@
   left: 669px;
 }
 
-.banner__button:hover, .banner__button:focus {
-  background-color: #840AA3;
-}
-
-.banner__button:active {
-  background-color: #640AA3;
-}
