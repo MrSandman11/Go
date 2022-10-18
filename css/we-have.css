@@ -3,7 +3,7 @@
 }
 
 .we-have__container {
-  height: 639px;
+  height: 708px;
 }
 
 .we-have__title {
@@ -18,9 +18,28 @@
 }
 
 .we-have__card-wrapper {
+  height: 565px;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 20px;
+  gap: 20px;
+}
+
+.card-wrapper__column_odd {
+  height: 496px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex-basis: 380px;
+  align-self:flex-start;
+}
+
+.card-wrapper__column_even {
+  height: 496px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex-basis: 380px;
+  align-self:flex-end;
 }
 
 .we-have__card-item {

@@ -1,6 +1,6 @@
 .booking {
   padding: 80px 0 80px;
-  background-color: #440F51;
+  background-color: var(--booking-faq-bg-color);
 }
 
 .booking__container {
@@ -49,12 +49,12 @@
   padding: 7px 15px 8px 15px;
   width: 250px;
   height: 55px;
-  background-color: #FFFFFF;
+  background-color: var(--main-text-color);
   border-radius: 8px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid var(--main-text-color);
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--second-text-color);
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
@@ -67,20 +67,20 @@
 }
 
 .booking__radio-label:hover {
-  background-color: #EADEED;
-  border: 3px solid #640AA3;
+  background-color: var(--social-bg-color);
+  border: 3px solid var(--main-active-color);
 }
 
 .booking__radio-input:checked + .booking__radio-label {
-  background-color: #FFFFFF;
-  border: 3px solid #640AA3;
-  color: #000000;
+  background-color: var(--main-text-color);
+  border: 3px solid var(--main-active-color);
+  color: var(--second-text-color);
 }
 
 .booking__radio-label:active {
-  background-color: #6C0287;
-  border: 3px solid #FFFFFF;
-  color: #FFFFFF;
+  background-color: var(--main-btn-color);
+  border: 3px solid var(--main-text-color);
+  color: var(--main-text-color);
 }
 
 .booking__fieldset-wrapper {
@@ -134,12 +134,12 @@
   display: block;
   width: 25px;
   height: 25px;
-  background-color:#FFFFFF;
+  background-color:var(--main-text-color);
   transition: outline 0.4s;
 }
 
 .booking__enterprize-checkbox:focus::before{
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--main-focus-color);
   outline-offset: 5px;
 }
 
@@ -150,7 +150,7 @@
   left: 3px;
   width: 20px;
   height: 10px;
-  border: 2px solid black;
+  border: 2px solid var(--second-text-color);;
   border-top: none;
   border-right: none;
   opacity: 0;
@@ -183,7 +183,7 @@
 }
 
 .booking__enterprize-radio:focus::before{
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--main-focus-color);
   outline-offset: 2px;
 }
 
@@ -195,7 +195,7 @@
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  background-color: black;
+  background-color: var(--second-text-color);;
   opacity: 0;
 }
 
@@ -233,7 +233,7 @@
 }
 
 .booking__input:focus {
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--main-focus-color);
   outline: none;
 }
 
@@ -271,24 +271,24 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--main-btn-color);
   border-radius: 10px;
   transition: background-color 0.4s, border 0.4s;
 }
 
 .booking__btn:hover {
-  background-color: #EADEED;
-  border: 3px solid #6C0287;
+  background-color: var(--social-bg-color);
+  border: 3px solid var(--main-btn-color);
 }
 
 .booking__btn:focus {
-  background-color: #FFFFFF;
-  border: 3px solid #6C0287;
+  background-color: var(--main-text-color);
+  border: 3px solid var(--main-btn-color);
 }
 
 .booking__btn:active {
-  background-color: #EADEED;
-  border: 3px solid #EADEED;
+  background-color: var(--social-bg-color);
+  border: 3px solid var(--social-bg-color);
 }
 
 

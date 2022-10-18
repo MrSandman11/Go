@@ -55,5 +55,5 @@
 }
 
 .about__quote_viol {
-  color: #6C0287;
+  color: var(--main-btn-color);
 }

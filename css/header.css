@@ -12,10 +12,10 @@
 .header__button {
   width: 280px;
   height: 55px;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--main-focus-color);
   border-radius: 10px;
-  background-color: #1B1A1B;
-  color: #FFFFFF;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
   font-weight: 700;
   font-size: 22px;
   line-height: 30px;
@@ -24,13 +24,13 @@
 }
 
 .header__button:hover, .header__button:focus {
-  background-color: #6C0287;
-  border: 3px solid #6C0287;
+  background-color: var(--main-btn-color);
+  border: 3px solid var(--main-btn-color);
 }
 
 .header__button:active {
-  background-color: #640AA3;
-  border: 1px solid #000000;
+  background-color: var(--main-active-color);
+  border: 1px solid var(--second-text-color);
 }
 
 .header__navigation-list {

@@ -63,16 +63,16 @@
 }
 
 .contacts__social-link:hover {
-  color: #EADEED;
+  color: var(--social-bg-color);
 }
 
 .contacts__social-link:focus {
-  color: #EADEED;
-  border: 1px solid #CD06FF;
+  color: var(--social-bg-color);
+  border: 1px solid var(--main-focus-color);
 }
 
 .contacts__social-link:active {
-  color: #CD06FF;
+  color: var(--main-focus-color);
   border: none;
 }
 

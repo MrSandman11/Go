@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "var.css";
 @import "header.css";
 @import "banner.css";
 @import "we-have.css";
@@ -23,8 +24,8 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  background-color: #1B1A1B;
-  color: #FFFFFF;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
   font-family: 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 400;

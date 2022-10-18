@@ -70,24 +70,32 @@
           <h2 class="we-have__title">У нас есть все для классного отдыха с друзьями!</h2>
 
           <ul class="we-have__card-wrapper">
-            <li class="we-have__card-item we-have__card-item_vr">
-              <p class="we-have__card-title">VR очки</p>
-            </li>
-            <li class="we-have__card-item we-have__card-item_audio">
-              <p class="we-have__card-title">Аудио-система 5.1 с отличным звуком</p>
-            </li>
-            <li class="we-have__card-item we-have__card-item_karaoke">
-              <p class="we-have__card-title">Караоке (4 микрофона)</p>
-            </li>
-            <li class="we-have__card-item we-have__card-item_boardgames">
-              <p class="we-have__card-title">Настольные игры</p>
-            </li>
-            <li class="we-have__card-item we-have__card-item_video">
-              <p class="we-have__card-title">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
-            </li>
-            <li class="we-have__card-item we-have__card-item_ps">
-              <p class="we-have__card-title">РlаyStаtiоn 5</p>
-            </li>
+            <div class="card-wrapper__column_odd">
+              <li class="we-have__card-item we-have__card-item_vr">
+                <p class="we-have__card-title">VR очки</p>
+              </li>
+              <li class="we-have__card-item we-have__card-item_boardgames">
+                <p class="we-have__card-title">Настольные игры</p>
+              </li>
+            </div>
+
+            <div class="card-wrapper__column_even">
+              <li class="we-have__card-item we-have__card-item_audio">
+                <p class="we-have__card-title">Аудио-система 5.1 с отличным звуком</p>
+              </li>
+              <li class="we-have__card-item we-have__card-item_video">
+                <p class="we-have__card-title">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+              </li>
+            </div>
+            
+            <div class="card-wrapper__column_odd">
+              <li class="we-have__card-item we-have__card-item_karaoke">
+                <p class="we-have__card-title">Караоке (4 микрофона)</p>
+              </li>
+              <li class="we-have__card-item we-have__card-item_ps">
+                <p class="we-have__card-title">РlаyStаtiоn 5</p>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -463,7 +471,9 @@
 
             <li class="reviews__list-item">
               <figure class="reviews__fig">
-                <img class="reviews__img" src="img/maks_samoilov.png" alt="Макс Самойлов">
+                <div class="reviews__img-wrapper">
+                  <img class="reviews__img" src="img/maks_samoilov.png" alt="Макс Самойлов">
+                </div>
                 <figcaption class="reviews__figcaption">Макс Самойлов</figcaption>
               </figure>
               <p class="reviews__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
@@ -471,7 +481,9 @@
 
             <li class="reviews__list-item">
               <figure class="reviews__fig">
-                <img class="reviews__img" src="img/oksana_grigorieva.png" alt="Оксана Григорьева">
+                <div class="reviews__img-wrapper">
+                  <img class="reviews__img" src="img/oksana_grigorieva.png" alt="Оксана Григорьева">
+                </div>
                 <figcaption class="reviews__figcaption">Оксана Григорьева</figcaption>
               </figure>
               <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
@@ -479,7 +491,9 @@
             
             <li class="reviews__list-item">
               <figure class="reviews__fig">
-                <img class="reviews__img" src="img/nikita_yashenko.png" alt="Никита Ященко">
+                <div class="reviews__img-wrapper">
+                  <img class="reviews__img" src="img/nikita_yashenko.png" alt="Никита Ященко">
+                </div>
                 <figcaption class="reviews__figcaption">Никита Ященко</figcaption>
               </figure>
               <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>

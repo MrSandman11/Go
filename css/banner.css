@@ -54,7 +54,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
-  color: #CD06FF;
+  color: var(--main-focus-color);
   text-align: center;
 }
 
@@ -63,14 +63,14 @@
   font-size: 75px;
   line-height: 106px;
   font-variant: small-caps;
-  color: #CD06FF;
+  color: var(--main-focus-color);
   text-align: center;
 }
 
 .banner__button {
   width: 374px;
   height: 80px;
-  background-color: #6C0287;
+  background-color: var(--main-btn-color);
   border-radius: 10px;
   z-index: 1;
   border: 0;
@@ -78,7 +78,7 @@
   font-size: 26px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--main-text-color);
   transition: background-color 0.4s;
 }
 
@@ -91,7 +91,7 @@
   display: block;
   width: 374px;
   height: 80px;
-  background-color: #6C0287;
+  background-color: var(--main-btn-color);
   border-radius: 10px;
   filter: blur(10px);
 }
@@ -101,7 +101,7 @@
 }
 
 .banner__button:active {
-  background-color: #640AA3;
+  background-color: var(--main-active-color);
 }
 
 .banner__button-down {
