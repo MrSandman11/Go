@@ -7,7 +7,7 @@
 }
 
 .we-have__title {
-  width: 800px;
+  width: 882px;
   margin: 0 auto;
   margin-bottom: 40px;
   font-weight: 700;
@@ -20,14 +20,13 @@
 .we-have__card-wrapper {
   height: 565px;
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
 .card-wrapper__column_odd {
   height: 496px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 40px;
   flex-basis: 380px;
   align-self:flex-start;
@@ -36,7 +35,7 @@
 .card-wrapper__column_even {
   height: 496px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 40px;
   flex-basis: 380px;
   align-self:flex-end;
