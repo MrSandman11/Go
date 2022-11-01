@@ -7,7 +7,8 @@
 }
 
 .halls__title {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  height: 56px;
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
@@ -35,21 +36,115 @@
   display: flex;
   align-items: center;
   height: 349px;
-  flex-basis: 580px;
+  width: calc(50% - 10px);
 }
 
 .halls__vibes {
-  background-image: url("../img/vibes.jpg");
+  background: url("../img/vibes.jpg") center center/cover no-repeat;
 }
 
 .halls__starwars {
-  background-image: url("../img/star_wars.jpg");
+  background: url("../img/star_wars.jpg") center center/cover no-repeat;
 }
 
 .halls__wildwest {
-  background-image: url("../img/wild_west.jpg");
+  background: url("../img/wild_west.jpg") center center/cover no-repeat;
 }
 
 .halls__neonstyle {
-  background-image: url("../img/neon.jpg");
+  background: url("../img/neon.jpg") center center/cover no-repeat;
+}
+
+@media(max-width: 1024px) {
+  .halls {
+    padding: 35px 0 70px;
+  }
+  
+  .halls__container {
+    height: 629px;
+  }
+  
+  .halls__title {
+    margin-bottom: 37px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  .halls__subtitle {
+    width: 252px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  
+  .halls__item {
+    height: 265px;
+  }
+}
+
+@media(max-width: 768px) {
+  .halls {
+    padding: 30px 0 62px;
+  }
+  
+  .halls__container {
+    height: 489px;
+  }
+  
+  .halls__title {
+    margin-bottom: 35px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .halls__subtitle {
+    width: 128px;
+    padding-top: 25px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .halls__wrapper {
+    gap: 17px 20px;
+  }
+  
+  .halls__item {
+    height: 200px;
+    width: calc(50% - 10px);
+  }
+}
+
+@media(max-width: 440px) {
+  .halls {
+    padding: 15px 0 30px;
+  }
+  
+  .halls__container {
+    height: 735px;
+  }
+
+  .halls__title {
+    margin-bottom: 15px;
+    height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .halls__subtitle {
+    width: 84px;
+    padding-top: 0;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  
+  .halls__wrapper {
+    gap: 10px;
+    flex-direction: column;
+  }
+  
+  .halls__item {
+    height: 168px;
+    width: 100%;
+  }
 }

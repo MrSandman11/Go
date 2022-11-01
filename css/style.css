@@ -13,6 +13,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -66,4 +67,25 @@ fieldset {
   max-width: 1440px;
   padding: 0 130px;
   margin: 0 auto;
+}
+
+@media(max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 60px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .container {
+    max-width: 1000px;
+    padding: 0 40px;
+  }
+}
+
+@media(max-width: 580px) {
+  .container {
+    max-width: 580px;
+    padding: 0 20px;
+  }
 }

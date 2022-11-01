@@ -12,7 +12,13 @@
 
     <header class="header">
       <div class="container header__container">
-        <svg width="120" height="66" viewBox="0 0 120 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="header__menu" width="54" height="29" viewBox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <rect width="54" height="5" rx="2"/>
+          <rect y="12" width="54" height="5" rx="2"/>
+          <rect y="24" width="31" height="5" rx="2"/>
+        </svg>
+
+        <svg class="header__logo" viewBox="0 0 120 66" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M39.6553 40.0361V32.5898H56.7451V47.8486C53.4736 50.0784 50.5765 51.6003 48.0537 52.4141C45.5472 53.2116 42.5687 53.6104 39.1182 53.6104C34.8701 53.6104 31.4033 52.8861 28.7178 51.4375C26.0485 49.9889 23.9733 47.8324 22.4922 44.9678C21.0273 42.1032 20.2949 38.8154 20.2949 35.1045C20.2949 31.1982 21.1006 27.8047 22.7119 24.9238C24.3232 22.0267 26.6833 19.8294 29.792 18.332C32.2171 17.1764 35.4805 16.5986 39.582 16.5986C43.5371 16.5986 46.4912 16.9567 48.4443 17.6729C50.4137 18.389 52.0413 19.5039 53.3271 21.0176C54.6292 22.515 55.6058 24.4193 56.2568 26.7305L45.5879 28.6348C45.1484 27.2839 44.3997 26.2503 43.3418 25.5342C42.3001 24.818 40.9655 24.46 39.3379 24.46C36.9128 24.46 34.9759 25.3063 33.5273 26.999C32.0951 28.6755 31.3789 31.3366 31.3789 34.9824C31.3789 38.8561 32.1032 41.623 33.5518 43.2832C35.0166 44.9434 37.0511 45.7734 39.6553 45.7734C40.8923 45.7734 42.0723 45.5944 43.1953 45.2363C44.3184 44.8783 45.6042 44.2679 47.0527 43.4053V40.0361H39.6553Z" fill="white"/>
           <path d="M61.9209 35.1289C61.9209 29.2858 63.5485 24.7367 66.8037 21.4814C70.0589 18.2262 74.5918 16.5986 80.4023 16.5986C86.3594 16.5986 90.9492 18.2018 94.1719 21.4082C97.3945 24.5983 99.0059 29.0742 99.0059 34.8359C99.0059 39.0189 98.2979 42.4531 96.8818 45.1387C95.4821 47.8079 93.4476 49.8913 90.7783 51.3887C88.1253 52.8698 84.8131 53.6104 80.8418 53.6104C76.8053 53.6104 73.4606 52.9674 70.8076 51.6816C68.1709 50.3958 66.0306 48.3613 64.3867 45.5781C62.7428 42.7949 61.9209 39.3118 61.9209 35.1289ZM72.9805 35.1777C72.9805 38.791 73.6478 41.387 74.9824 42.9658C76.3333 44.5446 78.1644 45.334 80.4756 45.334C82.8519 45.334 84.6911 44.5609 85.9932 43.0146C87.2952 41.4684 87.9463 38.6934 87.9463 34.6895C87.9463 31.3203 87.2627 28.8626 85.8955 27.3164C84.5446 25.7539 82.7054 24.9727 80.3779 24.9727C78.1481 24.9727 76.3577 25.762 75.0068 27.3408C73.6559 28.9196 72.9805 31.5319 72.9805 35.1777Z" fill="white"/>
           <path d="M0 34H1V66H0V34Z" fill="#CD06FF"/>
@@ -61,41 +67,39 @@
             </div>
           </div>
           <button class="banner__button">Забронировать</button>
-          <button class="banner__button-down"></button>
+          <a href="#we-have" class="banner__button-down"></a>
         </div>
       </section>
 
-      <section class="we-have">
+      <section class="we-have" id="we-have">
         <div class="container we-have__container">
           <h2 class="we-have__title">У нас есть все для классного отдыха с друзьями!</h2>
 
           <ul class="we-have__card-wrapper">
-            <div class="card-wrapper__column_odd">
               <li class="we-have__card-item we-have__card-item_vr">
                 <p class="we-have__card-title">VR очки</p>
               </li>
-              <li class="we-have__card-item we-have__card-item_boardgames">
-                <p class="we-have__card-title">Настольные игры</p>
-              </li>
-            </div>
 
-            <div class="card-wrapper__column_even">
               <li class="we-have__card-item we-have__card-item_audio">
-                <p class="we-have__card-title">Аудио-система 5.1 с отличным звуком</p>
+                <p class="we-have__card-title">Аудио-система 5.1
+с отличным звуком</p>
               </li>
-              <li class="we-have__card-item we-have__card-item_video">
-                <p class="we-have__card-title">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
-              </li>
-            </div>
-            
-            <div class="card-wrapper__column_odd">
+
               <li class="we-have__card-item we-have__card-item_karaoke">
                 <p class="we-have__card-title">Караоке (4 микрофона)</p>
               </li>
+
+              <li class="we-have__card-item we-have__card-item_boardgames">
+                <p class="we-have__card-title">Настольные игры</p>
+              </li>
+
+              <li class="we-have__card-item we-have__card-item_video">
+                <p class="we-have__card-title">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+              </li>
+
               <li class="we-have__card-item we-have__card-item_ps">
                 <p class="we-have__card-title">РlаyStаtiоn 5</p>
               </li>
-            </div>
           </ul>
         </div>
       </section>
@@ -195,7 +199,7 @@
                 <fieldset class="booking__fieldset booking__fieldset_enterprize">
                   <legend class="enterprize-legend">Приставка:</legend>
                   <ul class="booking__enterprize-list">
-                    <li class="booking__enterprize-item">
+                    <li class="booking__enterprize-item_radio">
                       <input
                           id="radio__playstation"
                           class="booking__enterprize-radio"
@@ -204,11 +208,11 @@
                           value="ps"
                           lang="en">
                       <label for="radio__playstation" class="booking__enterprize-label_radio">
-                        Play Station
+                        PlayStation 5
                       </label>
                     </li>
 
-                    <li class="booking__enterprize-item">
+                    <li class="booking__enterprize-item_radio">
                       <input
                           id="radio__sega"
                           class="booking__enterprize-radio"
@@ -221,7 +225,7 @@
                       </label>
                     </li>
 
-                    <li class="booking__enterprize-item">
+                    <li class="booking__enterprize-item_radio">
                       <input
                           id="radio__xbox"
                           class="booking__enterprize-radio"
@@ -234,7 +238,7 @@
                       </label>
                     </li>
 
-                    <li class="booking__enterprize-item">
+                    <li class="booking__enterprize-item_radio">
                       <input
                           id="radio__dendy"
                           class="booking__enterprize-radio"
@@ -339,7 +343,7 @@
 
             <fieldset class="booking__fieldset">
               <legend class="booking__legend booking__legend_date">Выбери дату и время</legend>
-              <div class="booking__fieldset-wrapper">
+              <div class="booking__date-list-wrapper">
                 <ul class="booking__date-list">
                   <li class="booking__date-item">
                     <input 
@@ -348,24 +352,25 @@
                         name="date" 
                         placeholder="Дата"
                         required>
-    
-                      <input 
-                        class="booking__input"
-                        type="text" 
-                        name="time" 
-                        placeholder="Время"
-                        required>
                   </li>
-
                   <li class="booking__date-item">
-                      <input 
-                        class="booking__input"
-                        type="number" 
-                        name="count" 
-                        placeholder="Сколько человек"
-                        required >
+                    <input 
+                      class="booking__input"
+                      type="text" 
+                      name="time" 
+                      placeholder="Время"
+                      required>
                   </li>
                 </ul>
+
+                <div class="booking__people-count">
+                  <input 
+                    class="booking__input"
+                    type="number" 
+                    name="count" 
+                    placeholder="Сколько человек"
+                    required>
+                </div>
 
                 <ul class="booking__name-list">
                   <li class="booking__name-item">
@@ -377,7 +382,7 @@
                         class="booking__input"
                         type="text" 
                         name="name" 
-                        required >
+                        required>
                   </li>
 
                   <li class="booking__name-item">
@@ -389,7 +394,7 @@
                         class="booking__input"
                         type="text" 
                         name="second-name" 
-                        required >
+                        required>
                   </li>
                 </ul>
 
@@ -435,15 +440,17 @@
           <div class="about__wrapper">
             <img class="about__img" src="img/about.jpg" alt="О нас">
 
-            <div class="about__content-wrapper">
-              <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности
-                в центральной части города.
-            
-                Каждый день мы стараемся создавать 
-                для вас самую лучшую игровую атмосферу
-                и радовать Вас топовыми игровыми разработками
-                со всего мира.
-              </p>
+            <div class="about__text">
+              <p class="about__text_first">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности
+              в центральной части города.</p>
+          
+              <p class="about__text_second">Каждый день мы стараемся создавать 
+              для вас самую лучшую игровую атмосферу
+              и радовать Вас топовыми игровыми разработками
+              со всего мира.</p>
+            </div>
+
+            <div class="about__founder">
               <blockquote class="about__quote"><span class="about__quote_viol">&#10077;</span> GAME OVER — 
                 это место незабываемых
                 впечатлений <span class="about__quote_viol">&#10078;</span>
@@ -507,19 +514,19 @@
           <h2 class="faq__title">Частые вопросы</h2>
           <ul class="faq__list">
             <li class="faq__list-item">
-              Можно ли забронировать комнату онлайн?
+              <p class="faq__list-item-text">Можно ли забронировать комнату онлайн?</p>
             </li>
             <li class="faq__list-item">
-              Могут ли мне вернуть деньги за бронь?
+              <p class="faq__list-item-text">Могут ли мне вернуть деньги за бронь?</p>
             </li>
             <li class="faq__list-item">
-              Какая комната самая популярная?
+              <p class="faq__list-item-text">Какая комната самая популярная?</p>
             </li>
             <li class="faq__list-item">
-              Как получить VIP карту?
+              <p class="faq__list-item-text">Как получить VIP карту?</p>
             </li>
             <li class="faq__list-item">
-              Какая комната самая популярная?
+              <p class="faq__list-item-text">Какая комната самая популярная?</p>
             </li>
           </ul>
         </div>
@@ -533,16 +540,16 @@
         <div class="contacts__wrapper">
           <div class="contacts__block">
             <address class="contacts__adress">
-              <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="contacts__adress-icon" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.4815 0C11.338 0 6.21411 4.52938 6.21411 10.3125C6.21411 12.5126 6.93645 14.4745 8.32275 16.3129L16.6192 28.1616C17.0217 28.7376 17.9421 28.7365 18.3437 28.1616L26.6762 16.2726C28.0326 14.5175 28.7488 12.4567 28.7488 10.3125C28.7488 4.62619 23.6943 0 17.4815 0ZM17.4815 15C14.6576 15 12.3599 12.8971 12.3599 10.3125C12.3599 7.72794 14.6576 5.625 17.4815 5.625C20.3053 5.625 22.603 7.72794 22.603 10.3125C22.603 12.8971 20.3053 15 17.4815 15Z" fill="#CD06FF"/>
                 <path d="M25.4891 21.5435L20.3313 28.9239C18.9962 30.829 15.9593 30.8228 14.6306 28.9257L9.46443 21.5454C4.91897 22.5073 2.11688 24.2693 2.11688 26.375C2.11688 30.0289 10.0333 32 17.4815 32C24.9297 32 32.846 30.0289 32.846 26.375C32.846 24.2678 30.0401 22.5048 25.4891 21.5435Z" fill="#CD06FF"/>
               </svg>
               <p class="contacts__adress-text">г. Москва 
-                ул. Аквамарина, 16</p>
+              ул. Усачёва, 29 к3</p>
             </address>
     
             <div class="contacts__phone">
-              <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="contacts__phone-icon" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M29.1358 14.6654H32.0494C32.0494 7.82541 26.4072 2.66675 18.9237 2.66675V5.33341C24.8412 5.33341 29.1358 9.25741 29.1358 14.6654Z" fill="#CD06FF"/>
                 <path d="M18.9382 10.6667C22.0019 10.6667 23.3086 11.8627 23.3086 14.6667H26.2222C26.2222 10.3667 23.6364 7.99999 18.9382 7.99999V10.6667ZM23.9234 17.924C23.6435 17.6911 23.2756 17.5669 22.8975 17.5776C22.5194 17.5883 22.1607 17.7331 21.897 17.9813L18.4109 21.2627C17.5718 21.116 15.8848 20.6347 14.1483 19.0493C12.4118 17.4587 11.8859 15.9107 11.73 15.148L15.3123 11.956C15.5839 11.7148 15.7422 11.3864 15.7539 11.0403C15.7656 10.6941 15.6297 10.3574 15.3749 10.1013L9.9921 4.68399C9.73722 4.42714 9.38298 4.27133 9.00462 4.24967C8.62625 4.22801 8.25356 4.3422 7.9657 4.56799L4.80447 7.04933C4.55261 7.28068 4.40228 7.58859 4.382 7.91466C4.36015 8.24799 3.94351 16.144 10.6331 22.2693C16.469 27.6093 23.7792 28 25.7924 28C26.0867 28 26.2674 27.992 26.3154 27.9893C26.6716 27.9711 27.0079 27.8329 27.2594 27.6013L29.9691 24.7067C30.2159 24.4434 30.341 24.1024 30.3176 23.7561C30.2942 23.4098 30.1242 23.0855 29.8438 22.852L23.9234 17.924Z" fill="#CD06FF"/>
               </svg>
@@ -552,7 +559,7 @@
             </div>
     
             <div class="contacts__mail">
-              <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="contacts__mail-icon" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.10021 5.94725C5.89873 9.66669 14.3187 16.2103 16.7934 18.2506C17.1256 18.526 17.4819 18.666 17.8518 18.666C18.221 18.666 18.5767 18.5273 18.9082 18.2533C21.385 16.2109 29.8049 9.66669 34.6035 5.94725C34.9023 5.71612 34.9478 5.30987 34.706 5.02731C34.1468 4.37437 33.3132 4 32.4197 4H3.28396C2.39056 4 1.55684 4.37438 0.997775 5.02738C0.755902 5.30988 0.80145 5.71612 1.10021 5.94725Z" fill="#CD06FF"/>
                 <path d="M34.9108 7.96279C34.6526 7.85279 34.3489 7.89116 34.1341 8.05916C28.8126 12.188 22.0209 17.4804 19.8841 19.2427C18.6847 20.2336 17.0202 20.2336 15.8181 19.2414C13.5405 17.3632 5.91363 11.4289 1.56962 8.0591C1.35335 7.8911 1.04893 7.85404 0.792853 7.96273C0.535411 8.07216 0.370361 8.30785 0.370361 8.5676V25.3332C0.370361 26.804 1.67703 27.9999 3.28396 27.9999H32.4198C34.0267 27.9999 35.3333 26.804 35.3333 25.3332V8.5676C35.3333 8.30785 35.1683 8.07154 34.9108 7.96279Z" fill="#CD06FF"/>
               </svg>
@@ -594,11 +601,11 @@
             </ul>
           </div>
           
-          <img src="img/map.png" alt="Карта">
+          <div class="contacts__map"></div>
         </div>
 
         <div class="contacts__wrapper-2">
-          <p class="contacs__bottom-text">© Game Over, 2022</p>
+          <p class="contacs__bottom-text contacs__bottom-text_cr">© Game Over, 2022</p>
 
           <div class="contacs__disigner">
             <p class="contacs__bottom-text">Design by Anastasia Ilina</p>
