@@ -185,7 +185,7 @@ line-height: 28px;
   }
 }
 
-@media(max-width: 650px) {
+@media(max-width: 690px) {
   .reviews__container {
     height: 697px;
     width: 400px;
@@ -197,7 +197,7 @@ line-height: 28px;
   }
 }
 
-@media(max-width: 440px) {
+@media(max-width: 460px) {
   .reviews {
     padding: 15px 0 15px;
   }
@@ -231,6 +231,7 @@ line-height: 28px;
   }
   
   .reviews__img {
+    position: relative;
     width: 86px;
     height: 86px;
     margin-bottom: 0;
@@ -239,6 +240,8 @@ line-height: 28px;
   .reviews__img-wrapper {
     position: relative;
     height: 86px;
+    width: 280px;
+    margin: 0 auto;
     margin-bottom: 9px;
   }
   

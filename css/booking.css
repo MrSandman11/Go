@@ -278,6 +278,26 @@
   z-index: 0;
 }
 
+.booking__input_date {
+  width: 134px;
+}
+
+.booking__input_date:first-child {
+  font-size: 12px;
+}
+
+.booking__input_date::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  position: absolute;
+  display: block;
+  top: 21px;
+  right: 27px;
+  background: url("../img/triangle.svg") center center/cover no-repeat;
+  width: 14.25px;
+  height: 9px;
+  cursor: pointer;
+}
+
 ::placeholder {
   font-size: 18px;
   line-height: 28px;
@@ -289,7 +309,7 @@
   position: relative;
 }
 
-.booking__date-item::after {
+.booking__date-item:last-child::after {
   content: '';
   position: absolute;
   right: 28px;
@@ -444,6 +464,13 @@
   .booking__input {
     padding-left: 18px;
   }
+
+  .booking__input_date::-webkit-calendar-picker-indicator {
+    top: 22px;
+    right: 29px;
+    width: 13.3px;
+    height: 8.4px;
+  }
   
   .booking__input_email {
     margin-bottom: 36px;
@@ -568,7 +595,7 @@
   .booking__date-list-wrapper {
     height: 964px;
     max-width: 880px;
-    grid-template-columns: fit-content(280px) minmax(200px, 300px);
+    grid-template-columns: minmax(200px, 280px) minmax(200px, 300px);
     grid-template-rows: 52px 270px;
     grid-template-areas: 
     "date count"
@@ -617,21 +644,9 @@
   }
 }
 
-@media(max-width: 750px) {
-  .booking__date-list-wrapper {
-    gap: 42px 75px;
-  }
-}
-
-@media(max-width: 720px) {
-  .booking__date-list-wrapper {
-    gap: 42px 50px;
-  }
-}
-
 @media(max-width: 690px) {
   .booking__container {
-    height: 1690px;
+    height: 1725px;
   }
 
   .booking__radio-label {
@@ -662,6 +677,14 @@
 
   .booking__date-item {
     width: 100%;
+  }
+
+  .booking__input_date {
+    width: 100%;
+  }
+
+  .booking__input_date:first-child {
+    font-size: 18px;
   }
 }
 
@@ -819,7 +842,7 @@
     gap: 14px;
     align-items:flex-end
   }
-  
+
   .booking__people-count::after {
     content: '';
     right: 28px;
@@ -831,10 +854,18 @@
   .booking__input {
     padding-left: 20px;
   }
+
+  .booking__input_date:first-child {
+    font-size: 12px;
+  }
   
   ::placeholder {
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .booking__date-item {
+    height: 52px;
   }
   
   .booking__date-item::after {

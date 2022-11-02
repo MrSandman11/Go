@@ -60,7 +60,7 @@
   line-height: 50px;
   text-transform: uppercase;
   white-space: pre-line;
-  text-indent: -37px;
+  text-indent: -35px;
 }
 
 .about__founder-wrapper {
@@ -80,6 +80,7 @@
 .about__quote_viol {
   font-weight: 900;
   color: var(--main-btn-color);
+  padding: 0;
 }
 
 @media(max-width: 1024px) {
@@ -126,6 +127,10 @@
     line-height: 36px;
     white-space: normal;
     text-indent: -25px;
+  }
+
+  .about__quote_viol {
+    padding: 0;
   }
   
   .about__founder-wrapper {
@@ -202,6 +207,10 @@
     line-height: 36px;
     text-indent: -26px;
   }
+
+  .about__quote_viol {
+    padding: 0;
+  }
   
   .about__founder-wrapper {
    height: 78px;
@@ -219,14 +228,14 @@
   }
 }
 
-@media(max-width: 650px) {
+@media(max-width: 690px) {
   .about__quote {
     font-size: 24px;
     line-height: 26px;
   }
 }
 
-@media(max-width: 440px) {
+@media(max-width: 460px) {
   .about {
     padding: 30px 0 15px;
   }
@@ -277,6 +286,9 @@
     line-height: 26px;
     white-space:unset;
     text-indent: -15px;
+  }
+  .about__quote_viol {
+    padding: 0;
   }
   
   .about__founder-wrapper {

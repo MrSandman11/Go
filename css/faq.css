@@ -158,7 +158,7 @@
   }
 }
 
-@media(max-width: 650px) {
+@media(max-width: 690px) {
   .faq__list-item {
     font-size: 14px;
     line-height: 18px;
@@ -166,7 +166,7 @@
   }
 }
 
-@media(max-width: 440px) {
+@media(max-width: 460px) {
   .faq {
     padding: 15px 0 23px;
   }

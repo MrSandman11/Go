@@ -83,9 +83,9 @@ fieldset {
   }
 }
 
-@media(max-width: 580px) {
+@media(max-width: 690px) {
   .container {
-    max-width: 580px;
+    max-width: 690px;
     padding: 0 20px;
   }
 }

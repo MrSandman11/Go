@@ -129,7 +129,7 @@
   }
 }
 
-@media(max-width: 850px) {
+@media(max-width: 1000px) {
   .we-have__card-item:nth-child(5) {
     padding: 83px 0 0 20px;
   }
@@ -198,7 +198,7 @@
   }
 }
 
-@media(max-width: 440px) {
+@media(max-width: 460px) {
   .we-have {
     padding: 23px 0 15px;
   }
