@@ -353,7 +353,7 @@
   text-transform: uppercase;
   color: var(--main-btn-color);
   border-radius: 10px;
-  transition: background-color 0.4s, border 0.4s;
+  transition: background-color 0.2s, border 0.2s;
   border: 0;
 }
 
