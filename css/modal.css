@@ -125,3 +125,60 @@
   border: 3px solid #EADEED;
 }
 
+@media(max-width: 690px) {
+  .modal {
+    max-width: 400px;
+  }
+}
+
+@media(max-width: 460px) {
+  .modal {
+    max-width: 280px;
+    padding: 60px 0 88.33px 0;
+  }
+  
+  .modal__close {
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+  }
+  
+  .modal__title {
+    font-size: 20px;
+  }
+  
+  .modal__inputs {
+    max-width: 220px;
+  }
+  
+  .modal__inputs-item {
+    margin-bottom: 50px;
+  }
+  
+  .modal__inputs-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .modal__input {
+    height: 42px;
+  }
+  
+  .modal__input:focus {
+    border: 2px solid var(--main-focus-color);
+    outline: none;
+  }
+  
+  .modal__call {
+    width: 242.67px;
+    height: 51.67px;
+    font-size: 18px;
+  }
+  
+  .modal__call::before {
+    bottom: 99.33px;
+    width: 242.67px;
+    height: 51.67px;
+  }
+}
+
