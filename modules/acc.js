@@ -20,8 +20,8 @@ const removeActive = (i) => {
   }
 };
 
-buttons.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
+items.forEach((item, index) => {
+  item.addEventListener('click', () => {
     for (let i = 0; i < items.length; i += 1) {
       if (index === i) {
         textWrapper[i].classList.toggle('faq__list-item-text-wrapper_active');

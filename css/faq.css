@@ -52,30 +52,30 @@
 
 .faq__list-item-question-button_even_active {
   background-color: #440F51;
-  background-image: url("/img/open_active.svg");
+  background-image: url("../img/open_active.svg");
 }
 
 .faq__list-item-question-button_even {
   background-color: #440F51;
-  background-image: url("/img/open.svg");
+  background-image: url("../img/open.svg");
 }
 
 .faq__list-item-question-button_even:hover{
-  background-image: url("/img/open_hover.svg");
+  background-image: url("../img/open_hover.svg");
 }
 
 .faq__list-item-question-button_odd_active {
   background-color: #fff;
-  background-image: url("/img/open-purple_active.svg");
+  background-image: url("../img/open-purple_active.svg");
 }
 
 .faq__list-item-question-button_odd {
   background-color: #fff;
-  background-image: url("/img/open-purple.svg");
+  background-image: url("../img/open-purple.svg");
 }
 
 .faq__list-item-question-button_odd:hover{
-  background-image: url("/img/open-purple_hover.svg");
+  background-image: url("../img/open-purple_hover.svg");
 }
 
 .faq__list-item-question-wrapper {
@@ -151,16 +151,16 @@
 
   .faq__list-item-question-button_even {
     background-color: #FFFFFF;
-    background-image: url("/img/open-purple.svg");
+    background-image: url("../img/open-purple.svg");
   }
 
   .faq__list-item-question-button_even:hover {
-    background-image: url("/img/open-purple_hover.svg");
+    background-image: url("../img/open-purple_hover.svg");
   }
 
   .faq__list-item-question-button_even_active {
     background-color: #fff;
-    background-image: url("/img/open-purple_active.svg");
+    background-image: url("../img/open-purple_active.svg");
   }
   
   .faq__list-item:last-child {
@@ -266,7 +266,7 @@
   }
 
   .faq__list-item-question-button_even_active, .faq__list-item-question-button_odd_active {
-    background-image: url("/img/open-purple_active.svg");
+    background-image: url("../img/open-purple_active.svg");
     background-size: contain;
   }
 
