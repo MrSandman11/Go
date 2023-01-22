@@ -16,18 +16,22 @@
 }
 
 .header__menu:hover > * {
-  background-color: #CD06FF;
+  background-color: var(--main-focus-color);
 }
 
 .header__menu:active > *, .header__menu:focus > * {
   background-color: #840AA3;
 }
 
+.header__menu:focus {
+  border: 1px solid var(--main-focus-color);
+}
+
 .header_menu-icon {
   position: absolute;
   height: 5px;
   width: 100%;
-  background-color: #6C0287;
+  background-color: var( --main-btn-color);
   top: calc(50% - 2.5px);
   transition: background-color 0.4s, top 1s, width 1s, opacity 0.4s, transform 1s ;
   border-radius: 2px;

@@ -28,16 +28,26 @@
 .burger__navigation-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 39px;
 }
 
 .burger__navigation-item {
+  width: 100%;
+  height: 57px;
+  padding: 19px 0 16px 0;
+  text-align: center;
   font-weight: 400;
   font-size: 22px;
   line-height: 22px;
   text-transform: uppercase;
   color: var(--main-text-color);
+}
+
+.burger__navigation-item:hover {
+  background-color: var(--main-btn-color);
+}
+
+.burger__navigation-item:active {
+  background-color: var(--main-focus-color);
 }
 
 .burger__button {
@@ -50,16 +60,17 @@
   }
 
   .burger__navigation-wrapper {
-    padding-top: 36px;
+    padding-top: 23px;
     height: 352px;
   }
 
   .burger__navigation-list {
-    gap: 26px;
-    margin-bottom: 38px;
+    margin-bottom: 25px;
   }
   
   .burger__navigation-item {
+    height: 48px;
+    padding: 15px 0 11px 0;
     font-size: 14px;
     line-height: 22px;
   }
