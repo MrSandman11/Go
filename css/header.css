@@ -10,22 +10,57 @@
 }
 
 .header__menu {
+  position: relative;
   display: none;
-  color: #6C0287;
-  transition: color 0.4s;
+  z-index: 3;
 }
 
-.header__menu:hover {
-  color: #CD06FF;
+.header__menu:hover > * {
+  background-color: #CD06FF;
 }
 
-.header__menu:active, .header__menu:focus {
-  color: #840AA3;
+.header__menu:active > *, .header__menu:focus > * {
+  background-color: #840AA3;
+}
+
+.header_menu-icon {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: #6C0287;
+  top: calc(50% - 2.5px);
+  transition: background-color 0.4s, top 1s, width 1s, opacity 0.4s, transform 1s ;
+  border-radius: 2px;
+}
+
+.header_menu-icon:nth-of-type(1) {
+  top: calc(50% - 14.5px);
+}
+
+.header_menu-icon:nth-of-type(3) {
+  top: calc(50% + 9.5px);
+  width: 31px;
+}
+
+.header_menu-icon_active:nth-of-type(1) {
+  top: calc(50%);
+  transform: rotate(-45deg);
+}
+
+.header_menu-icon_active:nth-of-type(2) {
+  opacity: 0;
+}
+
+.header_menu-icon_active:nth-of-type(3) {
+  top: calc(50%);
+  width: 100%;
+  transform: rotate(45deg);
 }
 
 .header__logo {
   width: 120px;
   height: 66px;
+  z-index: 3;
 }
 
 .header__button {
@@ -40,6 +75,7 @@
   line-height: 30px;
   text-transform: uppercase;
   transition: background-color 0.4s, border 0.4s;
+  z-index: 3;
 }
 
 .header__button:hover, .header__button:focus {
@@ -58,6 +94,10 @@
   text-transform: uppercase;
   font-size: 22px;
   line-height: 50px;
+}
+
+.header__navigation-item {
+  z-index: 3;
 }
 
 @media(max-width: 1280px) {
@@ -100,7 +140,8 @@
   
   .header__menu {
     display: block;
-    padding-top: 6px;
+    height: 29px;
+    width: 54px;
     cursor: pointer;
   }
   
@@ -124,9 +165,31 @@
   }
 
   .header__menu {
-    width: 37px;
-    height: 29px;
-    padding-top: 8px;
+    width: 39px;
+    height: 20px;
+  }
+
+  .header_menu-icon {
+    height: 3.45px;
+    top: calc(50% - 1.725px);
+  }
+
+  .header_menu-icon:nth-of-type(1) {
+    top: calc(50% - 10.005px);
+  }
+  
+  .header_menu-icon:nth-of-type(3) {
+    top: calc(50% + 6.555px);
+    width: 22.39px;
+  }
+
+  .header_menu-icon_active:nth-of-type(1) {
+    top: calc(50%);
+  }
+  
+  .header_menu-icon_active:nth-of-type(3) {
+    top: calc(50%);
+    width: 100%;
   }
 
   .header__logo {
