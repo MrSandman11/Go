@@ -10,6 +10,7 @@
 @import "faq.css";
 @import "contacts.css";
 @import "modal.css";
+@import "burger.css";
 
 html {
   position: relative;

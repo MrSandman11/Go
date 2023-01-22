@@ -1,0 +1,21 @@
+.burger__navigation {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+.burger__navigation_active {
+  
+}
+
+.burger__navigation-list {
+
+}
+
+.burger__navigation-item {
+
+}
+
+.burger__button {
+
+}
