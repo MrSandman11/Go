@@ -1,5 +1,5 @@
 const buttonCall = document.querySelector('.header__button');
-const menuButtonCall = document.querySelector('.burger__button')
+const menuButtonCall = document.querySelector('.burger__button');
 const modalOverlay = document.querySelector('.modal-overlay');
 
 const modalControl = (modalOverlay, buttonCall) => {
