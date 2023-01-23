@@ -5,46 +5,57 @@ const menuLines = document.querySelectorAll('.header_menu-icon');
 const menuOverlay = document.querySelector('.burger__navigation-overlay');
 
 const menuControl = (menuOverlay, menuBtn) => {
-  const durationOpacity = 1000;
-  const startTime = NaN;
+  const durationOpacity = 300;
 
-  const openMenu = (timestamp) => {
-    menuOverlay.style.visibility = 'visible';
-    const progress = (timestamp - startTime) / durationOpacity;
-    menuOverlay.style.opacity = progress;
+  const startOpenMenu = () => {
+    const startTime = Date.now();
 
-    if (progress > 1) {
-      requestAnimationFrame(openMenu);
-    } else {
-      menuOverlay.style.opacity = 1;
-    }
+    const openMenu = () => {
+      const timestamp = Date.now();
+      menuOverlay.style.visibility = 'visible';
+      const progress = (timestamp - startTime) / durationOpacity;
+      menuOverlay.style.opacity = progress;
+
+      if (progress < 1) {
+        requestAnimationFrame(openMenu);
+      } else {
+        menuOverlay.style.opacity = 1;
+      }
+    };
 
     menuLines.forEach((line) => {
       line.classList.toggle('header_menu-icon_active');
     });
-    menuBtn.classList.toggle('header__menu_active');
 
-    menuBtn.removeEventListener('click', openMenu);
-    menuBtn.addEventListener('click', closeMenu);
+    menuBtn.removeEventListener('click', startOpenMenu);
+    menuBtn.addEventListener('click', startCloseMenu);
+
+    openMenu();
   };
 
-  const closeMenu = (timestamp) => {
-    const progress = (timestamp - startTime) / durationOpacity;
-    menuOverlay.style.opacity = 1 - progress;
+  const startCloseMenu = () => {
+    const startTime = Date.now();
 
-    if (progress < 1) {
-      requestAnimationFrame(closeMenu);
-    } else {
-      menuOverlay.style.opacity = 0;
-      menuOverlay.style.visibility = 'hidden';
-    }
+    const closeMenu = () => {
+      const timestamp = Date.now();
+      const progress = (timestamp - startTime) / durationOpacity;
+      menuOverlay.style.opacity = 1 - progress;
+      if (progress < 1) {
+        requestAnimationFrame(closeMenu);
+      } else {
+        menuOverlay.style.opacity = 0;
+        menuOverlay.style.visibility = 'hidden';
+      }
+    };
 
     menuLines.forEach((line) => {
       line.classList.remove('header_menu-icon_active');
     });
 
-    menuBtn.addEventListener('click', openMenu);
-    menuBtn.removeEventListener('click', closeMenu);
+    menuBtn.addEventListener('click', startOpenMenu);
+    menuBtn.removeEventListener('click', startCloseMenu);
+
+    closeMenu();
   };
 
   // const openMenu = () => {
@@ -61,21 +72,19 @@ const menuControl = (menuOverlay, menuBtn) => {
   //   });
   // };
 
-  menuBtn.addEventListener('click', openMenu);
+  menuBtn.addEventListener('click', startOpenMenu);
 
   menuOverlay.addEventListener('click', e => {
     const target = e.target;
     if (target === menuOverlay ||
       target.closest('.header_menu')) {
-      closeMenu();
+      startCloseMenu();
     }
   });
 
   const menuItem = document.querySelectorAll('.burger__navigation-item');
   menuItem.forEach((item) => {
-    item.addEventListener('click', () => {
-      closeMenu();
-    });
+    item.addEventListener('click', startCloseMenu);
   });
 };
 
